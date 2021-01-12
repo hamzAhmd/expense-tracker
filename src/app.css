@@ -4,18 +4,115 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Roboto", sans-serif;
-  background-color: salmon;
+  padding: 1rem;
+  background-color: rgb(88, 164, 250);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .heading {
-  color: white;
+  color: rgb(167, 206, 251);
   font-weight: 500;
-  background-color: brown;
-  font-size: 2.5rem;
-  padding: 1rem;
-
+  background-image: linear-gradient(270deg, rgb(0, 28, 71), rgb(10, 60, 139));
+  font-size: 1.8rem;
+  padding: 0.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-shadow: 3px 3px rgb(1, 11, 24);
+  border-radius: 15px;
+}
+/* Total Balance */
+.container {
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  text-align: center;
+}
+#balance {
+  text-shadow: 2px 2px rgb(10, 60, 139);
+}
+/* Income-Expense Container */
+.IncomeExpense {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: lighter;
+  background-color: rgb(167, 206, 251);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(1, 11, 24);
+}
+.Income {
+  padding: 0.8rem;
+  font-size: 17px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+}
+.Expense {
+  padding: 0.8rem;
+  font-size: 17px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+}
+#Exp {
+  color: rgb(131, 10, 34);
+  font-size: 25px;
+}
+#Inc {
+  color: rgb(9, 87, 9);
+  font-size: 25px;
+}
+/* Transaction Section */
+.Trans {
+  padding: 0.5rem;
+  font-size: 17px;
+}
+.Transaction {
+  padding: 0.5rem 0 0 0;
+}
+
+.form_trans {
+  padding: 0.5rem 0 0 0;
+}
+.form_trans input {
+  width: 100%;
+  margin: 5px 0px;
+  padding: 0.3rem;
+  border-style: solid;
+  border-radius: 5px;
+  background-color: rgb(167, 206, 251);
+}
+.form_trans input[type="submit"] {
+  width: 50%;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* History Section */
+.Hist {
+  padding: 0.5rem;
+  font-size: 17px;
+}
+.History {
+  padding: 0.5rem 0 0 0;
+}
+.History-List {
+  margin: 0;
+  padding: 0.3rem 0 0 0;
+}
+.History-List > li {
+  display: flex;
+  background-color: rgb(167, 206, 251);
+  justify-content: space-between;
+  padding: 0.2rem;
+  margin: 5px;
+  border-radius: 5px;
 }

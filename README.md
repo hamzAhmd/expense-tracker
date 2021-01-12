@@ -1,3 +1,12 @@
+# Expense Tracker App Built with create-react-app
+
+This is my first application built with create-react-app after learning useState, useContext and useReducer.  
+This application is also uploaded on surge hosted website
+http://expense-tracker-hamzahmd.surge.sh/
+
+This concept is taken from the open source community on Youtube
+https://www.youtube.com/watch?v=XuFDcZABiDQ&t=925s
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
