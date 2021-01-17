@@ -5,9 +5,10 @@ import {IncomeExpense} from "./Functional_Components/IncomeExpense";
 import {Transaction} from "./Functional_Components/Transaction";
 import {History} from "./Functional_Components/History";
 
+import {ContextProvider} from "./StateHooks/ContextState";
 function App() {
   return (
-    <div >
+    <ContextProvider >
      <Header/>
      <div className="container">
      <Balance/>
@@ -21,7 +22,7 @@ function App() {
      <div className="History">
        <History/>
      </div>
-    </div>
+    </ContextProvider>
   );
 }
 

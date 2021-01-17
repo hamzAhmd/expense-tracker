@@ -1,21 +1,16 @@
-import React from 'react'
+import React,{useContext} from 'react';
+import {TransList} from "./TransList";
+import {GlobalHook} from "../StateHooks/ContextState";
 
 export const History = () => {
+    const {transactions} = useContext(GlobalHook);
     return (
         <>
         <h2 className="Hist">History</h2>
         <hr/>        
         <ul className="History-List">
-        <li>
-            <span>Cash</span>
-            <span>$50</span>
-        </li>
-        <li>
-            <span>Cash</span>
-            <span>$50</span>
-        </li>
+            {transactions.map(transaction=>(<TransList key={transaction.id} transaction={transaction}/>))}
         </ul>
-            
         </>
-    )
+        )
 }
