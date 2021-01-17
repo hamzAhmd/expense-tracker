@@ -1,4 +1,5 @@
-export default (state,actions)=>{
+
+export const ReducerHook = (state,actions)=>{
     switch(actions.type){
         case "Delete_HISTORY":
             return {
@@ -14,5 +15,4 @@ export default (state,actions)=>{
         default: 
         return state; 
     }
-
 }

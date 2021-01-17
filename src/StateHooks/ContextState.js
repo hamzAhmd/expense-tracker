@@ -1,5 +1,5 @@
 import React,{createContext,useReducer} from 'react';
-import ReducerHook from "./ReducerHook";
+import {ReducerHook} from "./ReducerHook";
 
 // initializing State
 const initialState = {
